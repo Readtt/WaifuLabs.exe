@@ -8,12 +8,28 @@
     "start": "electron .",
     "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/favicon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"WaifuLabs\""
   },
+  "config": {
+    "forge": {
+      "publishers": [
+        {
+          "name": "Readtt",
+          "config": {
+            "repository": {
+              "owner": "Readtt",
+              "name": "WaifuLabs.exe"
+            }
+          }
+        }
+      ]
+    }
+  },
   "author": {
-    "name": "HK",
+    "name": "Readtt",
     "email": "hk420.npm@gmail.com"
   },
   "license": "ISC",
   "devDependencies": {
+    "@electron-forge/publisher-github": "^6.0.0-beta.54",
     "electron": "^11.2.0",
     "electron-packager": "^15.2.0"
   },
