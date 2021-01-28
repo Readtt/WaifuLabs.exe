@@ -1,0 +1,30 @@
+{
+  "name": "waifulabs.exe",
+  "version": "1.0.0",
+  "description": "An executable for waifulabs.com made with Electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/favicon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"WaifuLabs\""
+  },
+  "author": {
+    "name": "HK",
+    "email": "hk420.npm@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "electron-alert": "^0.1.11",
+    "electron-builder": "^22.9.1",
+    "electron-context-menu": "^2.4.0",
+    "node-json-db": "^1.1.0",
+    "puppeteer-core": "^5.5.0",
+    "puppeteer-in-electron": "^3.0.3",
+    "v8-compile-cache": "^2.2.0",
+    "waifulabs": "^0.2.3"
+  }
+}
